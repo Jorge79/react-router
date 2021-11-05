@@ -5,6 +5,6 @@ export const api = axios.create({
 });
 
 export const busca = async (url, setDado) => {
-  const reposta = await api.get(url);
-  setDado(reposta.data);
+  const resposta = await api.get(url);
+  setDado(resposta.data);
 };
